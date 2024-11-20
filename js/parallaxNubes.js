@@ -1,5 +1,5 @@
 document.addEventListener('scroll', function() {
-    const clouds = document.querySelectorAll('.layer');
+    const clouds = document.querySelectorAll('.layerNubes');
     
     clouds.forEach(function(cloud) {
         let speed = cloud.getAttribute('data-speed');

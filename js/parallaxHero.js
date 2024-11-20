@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         layers.forEach(layer => {
             const speed = parseFloat(layer.getAttribute('data-speed'));
-            const initialTop = parseFloat(getComputedStyle(layer).top); // Obtiene el valor inicial de 'top'
-            // Ajusta el desplazamiento relativo al valor inicial
-  
+            const initialTop = parseFloat(getComputedStyle(layer).top); 
+
             const yPos = initialTop - scrollY * speed;
             
             layer.style.transform = `translateY(${yPos - initialTop}px)`;
